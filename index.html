@@ -2,9 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PDF編集は無料で十分？有料を選ぶべき人の違い【結論：仕事なら有料が正解】</title>
   <meta name="description" content="PDF編集は無料で足りる？結論：仕事や提出に使うなら有料PDF編集が正解です。無料で詰まりやすいポイントと、有料を選ぶべき人の特徴、選び方を分かりやすく解説します。" />
+
   <style>
     :root{
       --bg:#f6f7f9;
@@ -14,7 +15,6 @@
       --border:#e5e7eb;
       --accent:#2563eb;
       --accent2:#1d4ed8;
-      --danger:#b91c1c;
       --shadow:0 10px 25px rgba(0,0,0,.08);
       --radius:16px;
       --max:900px;
@@ -30,14 +30,16 @@
     }
     a{ color:var(--accent); text-decoration:none; }
     a:hover{ text-decoration:underline; }
+
     .wrap{ max-width:var(--max); margin:0 auto; padding:24px 16px 80px; }
+
     header{
       background: linear-gradient(135deg, #0f172a 0%, #111827 55%, #1f2937 100%);
       color:#fff;
       padding:34px 18px;
       border-radius:var(--radius);
       box-shadow:var(--shadow);
-      margin:18px 0 18px;
+      margin:18px 0;
     }
     header h1{
       margin:0 0 10px;
@@ -50,6 +52,7 @@
       color: rgba(255,255,255,.85);
       font-size: 15px;
     }
+
     .badge{
       display:inline-block;
       background: rgba(37,99,235,.18);
@@ -60,19 +63,22 @@
       font-size:12px;
       margin-bottom:12px;
     }
+
     .card{
       background:var(--card);
       border:1px solid var(--border);
       border-radius:var(--radius);
       box-shadow:0 4px 14px rgba(0,0,0,.05);
-      padding:18px 18px;
+      padding:18px;
       margin:14px 0;
     }
+
     .lead{
       font-size:16px;
       color:var(--sub);
       margin:0;
     }
+
     .strong{
       font-weight:800;
       color:#fff;
@@ -82,18 +88,22 @@
       border-radius:10px;
       line-height:1.6;
     }
+
     .ketsuron{
       font-size:16px;
       margin:10px 0 0;
       color:#111827;
     }
+
     h2{
       margin:0 0 10px;
       font-size:19px;
       letter-spacing:.2px;
     }
+
     ul{ margin:10px 0 0; padding-left:18px; color:var(--sub); }
     li{ margin:6px 0; }
+
     .note{
       border-left:4px solid #93c5fd;
       background:#eff6ff;
@@ -102,6 +112,7 @@
       color:#1f2937;
       margin-top:12px;
     }
+
     .warn{
       border-left:4px solid #fca5a5;
       background:#fef2f2;
@@ -110,16 +121,18 @@
       color:#1f2937;
       margin-top:12px;
     }
+
     .table{
       width:100%;
       border-collapse:collapse;
-      overflow:hidden;
-      border-radius:14px;
       border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
       margin-top:10px;
+      background:#fff;
     }
     .table th, .table td{
-      padding:12px 12px;
+      padding:12px;
       border-bottom:1px solid var(--border);
       vertical-align:top;
       font-size:14px;
@@ -128,12 +141,11 @@
       background:#f9fafb;
       text-align:left;
       color:#111827;
-      width:26%;
       white-space:nowrap;
     }
-    .table tr:last-child td, .table tr:last-child th{
-      border-bottom:none;
-    }
+    .table tr:last-child th,
+    .table tr:last-child td{ border-bottom:none; }
+
     .cta{
       display:flex;
       flex-direction:column;
@@ -149,6 +161,7 @@
       color:var(--sub);
       font-size:14px;
     }
+
     .btn{
       display:inline-flex;
       align-items:center;
@@ -156,20 +169,22 @@
       min-height:var(--tap);
       padding:12px 18px;
       background:var(--accent);
-      color:#fff !important;
+      color:#fff;
       border-radius:12px;
       font-weight:800;
       letter-spacing:.2px;
-      text-decoration:none !important;
+      text-decoration:none;
       box-shadow:0 8px 20px rgba(37,99,235,.22);
     }
     .btn:hover{ background:var(--accent2); }
     .btn:active{ transform: translateY(1px); }
+
     .muted{
       font-size:12px;
       color:#6b7280;
       margin-top:6px;
     }
+
     footer{
       margin-top:20px;
       color:#6b7280;
@@ -177,6 +192,7 @@
       line-height:1.6;
       padding:12px 4px 0;
     }
+
     .anchor{
       display:flex;
       flex-wrap:wrap;
@@ -191,17 +207,19 @@
       padding:8px 12px;
       font-size:13px;
       color:#111827;
-      text-decoration:none !important;
+      text-decoration:none;
     }
     .chip:hover{ background:#f9fafb; }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <header>
       <div class="badge">結論：仕事・提出に使うなら「有料PDF編集」が正解</div>
-      <h1>PDF編集は無料で十分？<br>有料を選ぶべき人の違い</h1>
+      <h1>PDF編集は無料で十分？<br />有料を選ぶべき人の違い</h1>
       <p>無料で頑張って時間を溶かす前に、判断基準だけ先に押さえておきましょう。</p>
+
       <div class="anchor">
         <a class="chip" href="#ketsuron">結論</a>
         <a class="chip" href="#muryou">無料の限界</a>
@@ -214,20 +232,19 @@
     <section class="card" id="ketsuron">
       <h2>結論（先にここだけ見ればOKです）</h2>
       <p class="ketsuron">
-        <span class="strong">仕事や提出に使うなら、有料PDF編集を選ぶのが正解です。</span><br>
+        <span class="strong">仕事や提出に使うなら、有料PDF編集を選ぶのが正解です。</span><br />
         無料で十分なのは「閲覧」「軽い注釈」「ごく簡単な修正」など、失敗しても困らない用途に限られます。
       </p>
+
       <div class="note">
-        無料ツールで詰まってしまうのは、使い方が悪いからではありません。<br>
+        無料ツールで詰まってしまうのは、使い方が悪いからではありません。<br />
         もともと「できること」に限界があるため、途中で行き止まりになりやすいだけです。
       </div>
     </section>
 
     <section class="card" id="muryou">
       <h2>無料PDF編集で「できること」と「詰まりやすいこと」</h2>
-      <p class="lead">
-        無料でも、軽作業なら問題なくこなせます。一方で、編集や変換が絡むと急に不安定になりやすいです。
-      </p>
+      <p class="lead">無料でも、軽作業なら問題なくこなせます。一方で、編集や変換が絡むと急に不安定になりやすいです。</p>
 
       <h3 style="margin:14px 0 8px; font-size:16px;">無料でできること（軽作業向き）</h3>
       <ul>
@@ -247,7 +264,7 @@
       </ul>
 
       <div class="warn">
-        「無料で何とかしよう」とすると、<br>
+        「無料で何とかしよう」とすると、<br />
         うまくいかない原因を探す時間が増えます。仕事用途では、ここが一番の損失になりやすいです。
       </div>
     </section>
@@ -255,14 +272,15 @@
     <section class="card" id="hikaku">
       <h2>無料と有料の決定的な違い（機能より、安心感と時間です）</h2>
       <p class="lead">
-        有料を選ぶ人が増えている理由は「多機能だから」ではなく、<b>やり直しが減って早く終わる</b>からです。
+        有料を選ぶ人が増えている理由は「多機能だから」ではなく、
+        <b>やり直しが減って早く終わる</b>からです。
       </p>
 
       <table class="table" aria-label="無料と有料の比較">
         <tr>
           <th>項目</th>
-          <td>無料</td>
-          <td>有料</td>
+          <th>無料</th>
+          <th>有料</th>
         </tr>
         <tr>
           <th>文字編集</th>
@@ -287,7 +305,7 @@
       </table>
 
       <div class="note" style="margin-top:14px;">
-        迷っている時点で「無料の限界」に近づいています。<br>
+        迷っている時点で「無料の限界」に近づいています。<br />
         まずは有料ツールの無料体験で、どこまでスムーズに進むかだけ確認するのが安心です。
       </div>
     </section>
@@ -307,17 +325,22 @@
 
     <section class="card" id="cta">
       <h2>まずは無料体験で「ストレスが消えるか」を確認してください</h2>
+
       <div class="cta">
         <p>
-          無料ツールで何度もやり直すより、<br>
-          <b>最初から有料PDF編集を試した方が、結果的に早く終わります。</b><br>
+          無料ツールで何度もやり直すより、<br />
+          <b>最初から有料PDF編集を試した方が、結果的に早く終わります。</b><br />
           迷っている時点で、無料の役割はもう終わっています。
         </p>
 
         <!-- ✅ ここをあなたのリンクに差し替え -->
-        <a class="btn" href="https://example.com" target="_blank" rel="nofollow sponsored noopener">
+        <a class="btn"
+           href="https://example.com"
+           target="_blank"
+           rel="nofollow sponsored noopener">
           無料体験でPDF編集を試す
         </a>
+
         <div class="muted">※リンク先は公式サイトや無料体験ページにしてください。</div>
       </div>
 
@@ -336,8 +359,12 @@
     </section>
 
     <footer>
-      <p style="margin:0 0 6px;"><b>免責：</b>本ページは一般的な情報提供を目的としています。記載内容の正確性や適合性を保証するものではありません。最終的な判断はご自身で行ってください。</p>
-      <p style="margin:0;">※このページは検証用テンプレです。リンク・文言・比較対象は、実際に選ぶツールに合わせて調整してください。</p>
+      <p style="margin:0 0 6px;">
+        <b>免責：</b>本ページは一般的な情報提供を目的としています。記載内容の正確性や適合性を保証するものではありません。最終的な判断はご自身で行ってください。
+      </p>
+      <p style="margin:0;">
+        ※このページは検証用テンプレです。リンク・文言・比較対象は、実際に選ぶツールに合わせて調整してください。
+      </p>
     </footer>
   </div>
 </body>
